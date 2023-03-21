@@ -24,6 +24,7 @@ CMD:vehcolor(playerid, params[]){
         if(IsNull(params)) return SendClientMessage(playerid, COLOR_WHITE, "Kegunaan: /vehcolor [color1] [color2:optional]");
         else {
             ChangeVehicleColor(vehicleid, primary, secondary);
+            SendClientMessage(playerid, COLOR_WHITE, "VEHICLE: Color changed!");
             return 1;
         }
     }
@@ -34,6 +35,7 @@ CMD:fixveh(playerid, params[]){
     if(GetPlayerState(playerid) == PLAYER_STATE_DRIVER){
         SetVehicleHealth(vehicleID, 1000.0);
         RepairVehicle(vehicleID);
+        SendClientMessage(playerid, COLOR_WHITE, "VEHICLE: This current vehicle has been fixed");
         return 1;
     }
     else return SEM(playerid, "ERROR: Harus menjadi Driver untuk menggunakan command ini!");
