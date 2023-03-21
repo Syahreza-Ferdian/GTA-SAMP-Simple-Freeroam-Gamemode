@@ -1,0 +1,1 @@
+new bool: GODMODE[MAX_PLAYERS];
