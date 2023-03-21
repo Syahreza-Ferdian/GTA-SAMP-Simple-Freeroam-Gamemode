@@ -1,6 +1,10 @@
-# Project2
+# Simple Freeroam Gamemode
+<p>By Syahreza Ferdian</p>
 
-[![sampctl](https://img.shields.io/badge/sampctl-Project2-2f2f2f.svg?style=for-the-badge)](https://github.com/Syahreza-Ferdian/Project2)
+<p align="center">
+  <a href="https://github.com/Syahreza-Ferdian/GTA-SAMP-Simple-Freeroam-Gamemode"><img src="https://img.shields.io/badge/sampctl-Simple_Freeroam_Server-2f2f2f.svg?style=for-the-badge" align="center"></a>
+</p>
+
 
 <!--
 Short description of your library, why it's useful, some examples, pictures or
@@ -26,38 +30,84 @@ And finally, maintaining your version number`:
 Happy Pawning!
 -->
 
+## Tentang Gamemode Ini
+> Gamemode pertama yang saya bikin dengan serius (setelah sebelumnya gagal). Akan terus di-update dan dibenahi sesuai dengan kemampuan saya.
+
+## Kekurangan Gamemode Ini
+<ul>
+        <li>Tidak mempunyai database system</li>
+        <li>Beberapa command yang harusnya ada, masih belum ada</li>
+        <li>Vehicle management system yang kurang bagus</li>
+        <li>Command /getveh yang masih ngebug. Kadang karakternya terbang ga jelas ketika men-get kendaraan besar (Roadtrain, Petrol Tanker, Linerunner)</li>
+</ul>
+
 ## Installation
 
-Simply install to your project:
+Setidaknya membutuhkan plugin/dependencies berikut untuk menjalankan gamemode ini:
+<ol>
+        <li>SAMP Standard Libary</li>
+        <li>ZCMD by Southclaws</li>
+        <li>MDialog by Open GTO</li>
+</ol>
+Sangat disarankan untuk memasang sampctl supaya lebih mudah dalam mengatur dan compile gamemode
 
-```bash
-sampctl package install Syahreza-Ferdian/Project2
-```
 
-Include in your code and begin using the library:
+## Command List (Akan di-update apabila ada update)
 
-```pawn
-#include <Project2>
-```
+> /help
+/credits
+/rules
+/setweather
+/killme
+/setskin
+/jetpack
+/weapon
+/setammo
+/setarmour
+/godmode
+/gotols
+/gotolv
+/gotosf
+/gotorc
+/ft
+/bt
+/lt
+/rt
+/dn
+/up
+/tune
+/destroyveh
+/vehcolor
+/fixveh
+/flip
+/gotoveh
+/getveh
+/cargod
+/setworld
+/worldid
+
 
 ## Usage
-
-<!--
-Write your code documentation or examples here. If your library is documented in
-the source code, direct users there. If not, list your API and describe it well
-in this section. If your library is passive and has no API, simply omit this
-section.
--->
-
-## Testing
 
 <!--
 Depending on whether your package is tested via in-game "demo tests" or
 y_testing unit-tests, you should indicate to readers what to expect below here.
 -->
 
-To test, simply run the package:
-
+Apabila sudah meng-install SAMPCTL, maka ketikkan cmd berikut di console untuk meng-compile gamemode:
+```bash
+sampctl package build
+```
+Lalu ketikkan cmd berikut untuk menjalankan server secara lokal (local host)
 ```bash
 sampctl package run
 ```
+
+## Special Thanks
+Terima kasih saya sampaikan kepada:
+<ol>
+        <li>Open MP Documentation</li>
+        <li>Southclaws untuk plugin ZCMD</li>
+        <li>Open-GTO untuk plugin MDialog</li>
+        <li>Tianmetal untuk macro SEM(Send Error Message) dan macro IsNull, serta menginspirasi saya untuk bikin gamemode secara Modular</li>
+</ol>
