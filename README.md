@@ -56,7 +56,6 @@ Sangat disarankan untuk memasang sampctl supaya lebih mudah dalam mengatur dan c
 
 > /help
 /credits
-/rules
 /setweather
 /killme
 /setskin
