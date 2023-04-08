@@ -13,10 +13,6 @@ CMD:credits(playerid, params[]){
     SendClientMessage(playerid, -1, "{00FF00}Syahreza's Gamemode. {FFFFFF}Developed by {9ACD32}Syahreza Ferdian.");
     return 1;
 }
-CMD:rules(playerid, params[]){
-    Dialog_Show(playerid, Dialog: dialog_Rules);
-    return 1;
-}
 CMD:setweather(playerid, params[]){
     if(IsNull(params)) return SendClientMessage(playerid, COLOR_WHITE, "KEGUNAAN: /setweather [ID]"); 
     new weather = strval(params);
