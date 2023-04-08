@@ -84,7 +84,7 @@ Sangat disarankan untuk memasang sampctl supaya lebih mudah dalam mengatur dan c
 /cargod
 /setworld
 /worldid
-
+/weapid
 
 ## Usage
 
