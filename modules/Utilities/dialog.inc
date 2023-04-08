@@ -35,6 +35,7 @@ DialogCreate:dialog_Help(playerid){
     strcat(Menu, "/cargod\tMembuat kendaraan yang dikemudikan menjadi kebal\n", sizeof(Menu));
     strcat(Menu, "/setworld\tMengubah world ID yang dipakai\n", sizeof(Menu));
     strcat(Menu, "/worldid\tMenampilkan world ID saat ini\n", sizeof(Menu));
+    strcat(Menu, "/weapid\tMenampilkan list ID weapon\n", sizeof(Menu));
 
     Dialog_Open(playerid, Dialog: dialog_Help, DIALOG_STYLE_TABLIST_HEADERS, "COMMAND LIST", Menu, "Oke", "Tutup");
 }

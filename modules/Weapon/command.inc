@@ -1,11 +1,15 @@
 #define MDIALOG_ZLANG_MODE				
 #include "mdialog"
 #include "../modules/DefineList"
+#include "../modules/Weapon"
 
 CMD:weapon(playerid, params[]){
-    if(IsNull(params)) return SendClientMessage(playerid, COLOR_WHITE, "Kegunaan: /weapon [weaponID]");
+    if(IsNull(params)){
+        SendClientMessage(playerid, COLOR_WHITE, "Kegunaan: /weapon [weaponID]");
+        SendClientMessage(playerid, COLOR_WHITE, "HINT: Gunakan {FFFF00}/weap{ffffff} untuk melihat daftar ID weapon.");
+    }
     new weaponID = strval(params);
-    if(46 >= weaponID >= 0){
+    if(46 >= weaponID >= 0 && !(21 >= weaponID >= 19)){
         GivePlayerWeapon(playerid, weaponID, 200);
     }
     else SEM(playerid, "ERROR: Invalid weapon ID!");
@@ -32,5 +36,9 @@ CMD:setarmour(playerid, params[]){
         SEM(playerid, "ERROR: Value tidak bisa di bawah 0!");
     }
     else SEM(playerid, "ERROR: Maksimal armour adalah 100!");
+    return 1;
+}
+CMD:weapid(playerid, params[]){
+    Dialog_Show(playerid, Dialog: dialog_Weapon_ID);
     return 1;
 }
