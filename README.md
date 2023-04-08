@@ -84,7 +84,7 @@ Sangat disarankan untuk memasang sampctl supaya lebih mudah dalam mengatur dan c
 /cargod
 /setworld
 /worldid
-
+/weapid
 
 ## Usage
 
@@ -108,5 +108,5 @@ Terima kasih saya sampaikan kepada:
         <li>Open MP Documentation</li>
         <li>Southclaws untuk plugin ZCMD</li>
         <li>Open-GTO untuk plugin MDialog</li>
-        <li>Tianmetal untuk macro SEM(Send Error Message) dan macro IsNull, serta menginspirasi saya untuk bikin gamemode secara Modular</li>
+        <li>Tianmetal untuk macro SEM(Send Error Message) dan macro IsNull</li>
 </ol>
