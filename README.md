@@ -85,6 +85,7 @@ Sangat disarankan untuk memasang sampctl supaya lebih mudah dalam mengatur dan c
 /setworld
 /worldid
 /weapid
+/drift
 
 ## Usage
 

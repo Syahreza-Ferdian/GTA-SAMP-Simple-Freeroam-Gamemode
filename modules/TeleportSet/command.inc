@@ -2,6 +2,7 @@
 #include "mdialog"
 #include "../modules/DefineList"
 #include "../modules/TeleportSet/stocks.inc"
+#include "../modules/TeleportSet/dialog"
 
 CMD:gotols(playerid, params[]){
     new vehicleid = GetPlayerVehicleID(playerid);
@@ -162,5 +163,9 @@ CMD:tune(playerid, params[]){
             return SEM(playerid, "ERROR: Invalid input number!");
         }
     }
+    return 1;
+}
+CMD:drift(playerid, params[]){
+    Dialog_Show(playerid, Dialog: dialog_drift);
     return 1;
 }
